@@ -53,14 +53,14 @@ define([
         uninitialize: function () {
             logger.debug(this.id + ".uninitialize");
         },
-
+        //buttonNode define, called in infoButton.html hello world
         _setupButton: function () {
             this.connect(this.buttonNode, "click", this._handleClick.bind(this))
         },
 
         _handleClick: function () {
             var messageString = "All these people are awesome: \n";
-            messageString += "Conner\n";
+            messageString += "Bo\nLily\nElena\n";
             // TODO: Add your name here
             mx.ui.info(messageString, false);
         },
